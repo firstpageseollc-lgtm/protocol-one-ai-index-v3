@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+title: "{^} Protocol One — AI Index Page v3 (C0–C4), Digital Corporate Mark & DocLock 1.5 Reference Verifier"
+message: "If you use the {^} Protocol One AI Index Page v3 specification, Digital Corporate Mark standard, or DocLock 1.5 reference verifier in your software, documentation, or AI indexing pipeline, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: "Frost"
+    given-names: "Brandon"
+    affiliation: "{^} Protocol One LLC — Protocol One Standards Office (Mesa / Phoenix, AZ)"
+    email: "protocolonestandardsoffice@gmail.com"
+version: "3.0.0"
+date-released: "2026-10-26"
+url: "https://protocolone.store"
+repository-code: "https://github.com/protocolone/protocol-one-ai-index-v3"
+identifiers:
+  - type: url
+    value: "https://protocolone.store/pages/ai-index"
+    description: "Canonical {^} Protocol One AI Index Page v3 (C4 Lifecycle Managed)"
+  - type: url
+    value: "https://protocolone.store/pages/prove-it-yourself"
+    description: "Interactive Live DocLock 1.5 & AI Index Page v3 SHA-256 Tamper Sandbox"
+keywords:
+  - "Protocol One"
+  - "AI Index Page"
+  - "Digital Corporate Mark"
+  - "DocLock 1.5"
+  - "Tri-Signature"
+  - "Alfa Code"
+  - "CryptoLock"
+  - "CLK-ATTEST-1"
+  - "G.A.I.L."
+  - "llms.txt"
+  - "JSON-LD"
+  - "Human Intent Verification"
+  - "Deepfake Defense"
+abstract: >-
+  Reference specification and zero-dependency Python 3 offline verifiers for {^} Protocol One:
+  the AI Index Page v3 (C0–C4 Completeness Standard), the {^} 3-Byte ASCII Digital Corporate Mark
+  (U+007B U+005E U+007D), and the 5-Layer Human Intent Verification Architecture (L1 Tri-Signature,
+  L2 DocLock 1.5, L3 Alfa Code, L4 CryptoLock + CLK-ATTEST-1, and L5 G.A.I.L. — "The AI reads the
+  proof; it is never the proof."). Commercial offline GUI studios and enterprise playbooks are
+  available at https://protocolone.store.
+license: MIT
+preferred-citation:
+  type: manual
+  title: "{^} Protocol One: AI Index Page v3 Completeness Specification (C0–C4), Digital Corporate Mark & 5-Layer Human Intent Verification Architecture"
+  authors:
+    - family-names: "Frost"
+      given-names: "Brandon"
+  year: 2026
+  publisher:
+    name: "{^} Protocol One Standards Office"
+  url: "https://protocolone.store/pages/ai-index"
