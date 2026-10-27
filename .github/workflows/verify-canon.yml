@@ -1,0 +1,37 @@
+name: "{^} Protocol One Canon Verification CI"
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  verify-canon-suite:
+    name: "Run AI Index v3 (15/15), DCM (12/12) & DocLock 1.5 Self-Tests"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: "1. AI Index Page v3 Builder & 12-Check Verifier (§16 Self-Test: 15/15)"
+        run: python3 verifier/aip_v3_builder_and_verifier.py --self-test
+
+      - name: "2. Offline G.A.I.L. AI Audit Assistant Diagnostic"
+        run: python3 verifier/aip_v3_builder_and_verifier.py --gail-audit
+
+      - name: "3. Verify Canonical Protocol One AI Index Page v3 Artifact"
+        run: python3 verifier/aip_v3_builder_and_verifier.py --verify examples/protocolone_canonical_ai_index_v3.aip
+
+      - name: "4. Digital Corporate Mark ({^}) 12-Surface Survival Benchmark (12/12)"
+        run: python3 verifier/dcm_linter_and_survival_test.py --self-test
+
+      - name: "5. DocLock 1.5 + CLK-ATTEST-1 Offline Verifier Self-Test"
+        run: python3 verifier/doclock_1_5_offline_verifier.py --self-test
